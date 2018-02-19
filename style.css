@@ -1,14 +1,15 @@
 /* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
    HTML content. To learn how to do something, just try searching Google for questions like
    "how to change link color." */
-
+@media only screen {
 body {
   background-color: #111;
   color: #DDD;
   font-family: Verdana;
-  padding-left: 10%;
-  padding-right: 10%;
   text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: 1em;
 }
 
 a:link {
@@ -24,5 +25,21 @@ ul {
 }
 
 div.title {
-  line-height: 60%;
+}
+}
+
+@media only screen and (max-width: 768px){
+  body {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  body {
+    padding-left: 1%;
+    padding-right 1%;
+    font-size: 1em;
+  }
 }
